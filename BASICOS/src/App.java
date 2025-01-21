@@ -1,20 +1,5 @@
 import java.util.Arrays;
-import clases.Alumno;
-import clases.Asignatura;
-import clases.Calle;
-import clases.Ciudad;
-import clases.CuentaCorriente;
-import clases.Deporte;
-import clases.Jugador;
-import clases.Ordenador;
-import clases.Parking;
-import clases.Patin;
-import clases.Persona;
-import clases.Premio;
-import clases.Prenda;
-import clases.Restaurante;
-import clases.Seleccion;
-import clases.Vivienda;
+import clases.*;
 
 public class App {
     public static void main(String[] args) {
