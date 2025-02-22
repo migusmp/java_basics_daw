@@ -74,6 +74,13 @@ public class Zombi extends Muerto {
         }
     }
 
+    public boolean equals(Zombi z) {
+        if (super.equals(z) && this.agresividad == z.agresividad && this.estado == z.estado) {
+            return true;
+        }
+        return false;
+    }
+
     public Zombi clone() {
         Zombi cloned = (Zombi) super.clone();
         try {

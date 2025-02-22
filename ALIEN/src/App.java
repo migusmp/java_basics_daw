@@ -3,7 +3,6 @@
 // import clases.Inmortal;
 // import clases.Mortal;
 import clases.Zombi;
-
 public class App {
     public static void main(String[] args) throws Exception {
         try {

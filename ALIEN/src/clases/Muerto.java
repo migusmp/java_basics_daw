@@ -31,6 +31,13 @@ public class Muerto extends Individuo {
         return this.getNombre() + " nació en " + this.getNacimiento() + " y falleció en " + this.getFallecimiento() + ".";
     }
 
+    public boolean equals(Muerto m) {
+        if (super.equals(m) && this.fallecimiento == m.fallecimiento) {
+            return true;
+        }
+        return false;
+    }
+
     public Muerto clone() {
         Muerto cloned = (Muerto) super.clone();
         return cloned;
