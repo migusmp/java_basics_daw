@@ -23,7 +23,7 @@ public class Inmortal extends Individuo {
 
     // SETTERS.
     public void setRango(String rango) throws Exception { 
-        if (!this.rango.equals("noble") && !this.rango.equals("rey")) {
+        if (!rango.equals("noble") && !rango.equals("rey")) {
             throw new Exception("Error: Debes introducir el rango de 'rey' o 'noble'.");
         }
         this.rango = rango; 
@@ -41,10 +41,8 @@ public class Inmortal extends Individuo {
     }
 
     public boolean equals(Inmortal i) {
-        if (super.equals(i)) {
-            if (this.rango == i.rango && this.criado == i.criado) {
+        if (super.equals(i) && this.rango == i.rango && this.criado == i.criado) {
                 return true;
-            }
         }
         return false;
     }
@@ -56,5 +54,4 @@ public class Inmortal extends Individuo {
             cloned.criado = this.criado; 
             return cloned;
     }
-
 }

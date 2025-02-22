@@ -25,10 +25,8 @@ public class Mortal extends Individuo {
     }
 
     public boolean equals(Mortal m) {
-        if (this.equals(m)) {
-            if (this.trabajo == m.trabajo) {
+        if (super.equals(m) && this.trabajo == m.trabajo) {
                 return true;
-            }
         }
         return false;
     }
